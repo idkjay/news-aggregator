@@ -1,4 +1,4 @@
-<html lang="en">
+<!-- <html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Sinatra Template</title>
@@ -8,4 +8,18 @@
     <h1>I'm a Sinatra App!</h1>
     <script src="/javascripts/app.js"></script>
   </body>
-</html>
+</html> -->
+<h1>Boston's Top Articles</h1>
+
+<ul>
+  <% @article_objects.each do |article| %>
+
+  <li>
+    <a href=<%=article.url%>><%=article.title%> - <%=article.description%>
+  </li>
+
+
+  <%end%>
+</ul>
+
+<h4 class="new"><a href="/articles/new">Add a New Article</a></h4>
