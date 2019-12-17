@@ -1,0 +1,8 @@
+---
+title: "News Aggregator Plus"
+type: "challenge"
+description: "Persist user data via an HTML form."
+tags: "sinatra, html-forms"
+ignore:
+- "news-aggregator-plus.md"
+- "roster.json"
